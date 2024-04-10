@@ -20,7 +20,8 @@ def partition(nums: List[int], start: int, end: int) -> int :
     swapIndex = start
     
     # the iteration index will start with the 'start + 1' value, since our pivot is already
-    # the value on the 'start' position, there is no need to check the same value twice
+    # the value on the 'start' position, there is no need to check the same value twice.
+    # also the final range should be 'end + 1' in order to iterate the right amount of times.
     for index in range(start+1,end+1):
 
         # if the pivot value is greater than the current iteration value
